@@ -61,10 +61,9 @@ public class PokeServer {
 				break;
 			case("player.movement"):
 				publishPlayerMovement("map", 0);
+				break;
 			}
-			
-			
-			System.out.println("[x] Received " + routingKey + " : " + message + "");
+
 		}
 	}
 

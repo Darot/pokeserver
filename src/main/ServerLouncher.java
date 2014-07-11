@@ -1,4 +1,6 @@
-package socket;
+package main;
+
+import socket.PokeServer;
 
 public class ServerLouncher {
 

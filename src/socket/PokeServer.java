@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.json.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
@@ -71,7 +72,8 @@ public class PokeServer {
 				System.out.println("username and password received");
 				break;
 			case("player.get.all"):
-				System.out.println("GETPLAYERS!!!!");
+				JSONArray result = db.getPlayerOnMap("adminmap");
+				publisher.sendPlayersOnMap(result, "adminmap");
 				break;
 			case("player.movement"):
 				publisher.sendPlayerMovement(msg);

@@ -1,5 +1,6 @@
 package socket;
 
+import org.json.JSONArray;
 import org.json.simple.JSONObject;
 
 import com.rabbitmq.client.Channel;
@@ -31,6 +32,14 @@ public class PublisherSocket {
 		//Packing the informations into a JSON Object
 		try{
 			channel.basicPublish(EXCHANGE_NAME, "player.movement", null, msg.toJSONString().getBytes());
+		}catch(Exception e){
+			System.out.println("no Connection!!!");
+		}
+	}
+	
+	public void sendPlayersOnMap(JSONArray msg, String mapName){
+		try{
+			channel.basicPublish(EXCHANGE_NAME, "map." + mapName, null, msg.toString().getBytes());
 		}catch(Exception e){
 			System.out.println("no Connection!!!");
 		}

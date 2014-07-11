@@ -6,7 +6,10 @@
 	<classpathentry exported="true" kind="lib" path="/home/daniel/NetBeansProjects/pokerpg/libs/gdx.jar"/>
 	<classpathentry exported="true" kind="lib" path="/home/daniel/NetBeansProjects/pokerpg/libs/postgresql-9.3-1101.jdbc4.jar"/>
 	<classpathentry exported="true" kind="lib" path="/home/daniel/workspace/pokeserver/libs/org.json-20120521.jar"/>
-	<classpathentry exported="true" kind="lib" path="/home/daniel/NetBeansProjects/pokerpg/libs/javax.ws.rs-api-2.0-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="/home/daniel/NetBeansProjects/pokerpg/libs/json-simple-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/daniel/workspace/pokeserver/libs/jaxrs-ri-2.10.1.zip"/>
+	<classpathentry exported="true" kind="lib" path="/home/daniel/workspace/pokeserver/libs/jsr311-api-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/daniel/workspace/pokeserver/libs/jersey-bundle-1.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/daniel/workspace/pokeserver/libs/asm-3.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
